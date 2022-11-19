@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>weather </title>
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" class="search_bar" placeholder="Search">
+            <button class="search">search</button>
+                <div class="weather">
+                    <!-- <h2 class="city">{%location%},{%country%}</h2> -->
+                    <div class="temp">{%temp%}</div>
+                    <!-- <div id="curdate"></div> -->
+                    <img src="" alt="" class="icons">
+                    <!-- <div class="descripton">{%Description%}}</div>
+                    <div class="humidity">{%Humidity%}</div>
+                    <div class="wind">{%Wind Speed%}</div> -->
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"> 
+    const curDate =document.getElementById("curdate")
+    
+
+    const getCurrentDay =()=>{
+    let currentTime =new Date();
+    console.log(currentTime.getDay())}
+
+    getCurrentDay();
+    </script>
+</body>
+</html>
